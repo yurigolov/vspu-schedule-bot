@@ -1,0 +1,142 @@
+# Português. As chaves são as mesmas de ru.toml.
+#
+# Os campos entre chavetas ({group}, {time} …) são preenchidos pelo bot —
+# não os traduza nem apague. As etiquetas HTML (<b>, <code>) podem ficar como estão.
+# Os nomes das disciplinas, dos professores e das salas vêm do site da universidade e ficam em russo.
+
+[lang]
+name = "Português"
+prompt = "🌐 Escolha o idioma"
+chosen = "✅ Idioma: português"
+
+[buttons]
+now = "🕐 Agora"
+today = "📅 Hoje"
+tomorrow = "➡️ Amanhã"
+week = "🗓 Semana"
+next_week = "⏭ Próxima semana"
+
+[periods]
+now = "Agora"
+today = "Hoje"
+tomorrow = "Amanhã"
+week = "Semana"
+next_week = "Próxima semana"
+
+[commands]
+teacher = "Horário de um professor"
+subject = "Procurar professor por disciplina"
+group = "Mudar de turma"
+language = "Idioma"
+
+[start]
+hello = "Olá! Mostro o horário da Universidade Estatal Pedagógica de Voronezh (VGPU) a partir do site rsp-vspu.online."
+
+[group]
+prompt = """Escreva o nome da sua turma. Basta uma parte: por exemplo, <code>AN 251</code> encontra <code>ИЯ-АН_Оb251</code>. Pode usar letras latinas.
+
+Ou escolha a turma na lista 👇"""
+from_list = "📋 Escolher na lista"
+not_found = "Não encontrei essa turma 🤔 Tente escrever de outra forma ou escolha na lista."
+saved = """✅ Turma: <b>{group}</b>
+
+Use os botões abaixo para ver o horário: agora, hoje, amanhã, esta semana ou a próxima.
+Horário de um professor: /teacher ou escreva o sobrenome. Mudar de turma: /group; idioma: /language."""
+choose_first = "Primeiro escolha a sua turma."
+pin = "📌 Definir como a minha turma"
+pinned_toast = "📌 Guardado"
+pinned = "✅ Agora a sua turma é <b>{group}</b>. O horário está nos botões abaixo."
+nav_faculty = "Escolha a faculdade:"
+nav_direction = "Faculdade {faculty}. Escolha o curso:"
+nav_group = "Curso {direction}. Escolha a turma:"
+
+[teacher]
+prompt = """De que professor quer ver o horário? Escreva o sobrenome, por exemplo <code>Anisimova</code> ou <code>Анисимова</code>. A sua turma não muda.
+
+Ou procure pela primeira letra do sobrenome 👇"""
+by_letter = "🔤 Escolher pela primeira letra (cirílico)"
+not_found = "Não encontrei esse professor 🤔 Tente outra grafia ou escolha pela letra."
+nav_letter = "Escolha a primeira letra do sobrenome:"
+nav_list = "Professores com «{letter}»:"
+
+[subject]
+prompt = """Que disciplina? Escreva parte do nome, por exemplo <code>философия</code> ou <code>filosofiya</code>.
+
+Vou encontrar quem a leciona e em que turmas. Os nomes das disciplinas estão em russo, como no site."""
+not_found = "Não encontrei essa disciplina no horário do site 🤔 Tente outra grafia."
+building = "A lista de disciplinas ainda está a ser recolhida do site — tente daqui a alguns minutos."
+too_many = "Há {count} disciplinas que correspondem — seja mais específico, por favor."
+title = "📚 Disciplina: «{query}»"
+legend = "⭐ — leciona na sua turma"
+updated = "Com base no horário do site, atualizado em {date}."
+more = "E mais {count} — refine a pesquisa para as ver."
+open_hint = "Toque num professor para abrir o horário 👇"
+
+[search]
+pick = "Escolha entre os resultados:"
+too_many = "Foram encontradas {count} opções — seja mais específico, por favor."
+not_understood = "Não percebi 🤔 Escreva o nome de uma turma ou o sobrenome de um professor. Comandos: /help"
+
+[common]
+back = "« Voltar"
+site_down = "😔 O site do horário não responde neste momento. Tente novamente mais tarde."
+stale_button = "Este botão já não é válido 🙂 Abra o horário de novo."
+reset_done = "🗑 Os seus dados foram apagados."
+help = """Os botões abaixo mostram o horário da sua turma: agora, hoje, amanhã, esta semana ou a próxima.
+
+/teacher — horário de um professor (a sua turma não muda)
+/subject — procurar professor por disciplina
+/group — mudar de turma
+/language — mudar de idioma
+
+Também pode escrever o sobrenome de um professor ou o nome de outra turma, em letras latinas ou cirílicas.
+Os nomes das disciplinas e dos professores aparecem como no site da universidade, em russo."""
+
+[schedule]
+weekdays = ["Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado", "Domingo"]
+months = ["janeiro", "fevereiro", "março", "abril", "maio", "junho",
+          "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+date = "{weekday}, {day} de {month}"
+day_month = "{day} de {month}"
+range_same_month = "{d1}–{d2} de {month}"
+range = "{d1} de {month1} – {d2} de {month2}"
+week_title = "Esta semana"
+next_week_title = "Próxima semana"
+col_number = "Nº"
+col_time = "Horário"
+col_subject = "Disciplina"
+col_teacher = "Professor"
+col_groups = "Turmas"
+col_room = "Sala"
+no_lessons = "Sem aulas 🎉"
+no_data = "Ainda não há horário para este dia no site."
+pair = "Aula {n}"
+subgroup = "Subgrupo {n}"
+saved_copy = "⚠️ O site do horário está indisponível neste momento. Esta é uma cópia guardada de {date}, {time} — pode haver alterações."
+
+[week_types]
+# tipo de semana, como o site o escreve por baixo da data (o horário alterna)
+"числитель" = "semana numerador"
+"знаменатель" = "semana denominador"
+
+[lesson_types]
+"л." = "aula teórica"
+"пр." = "aula prática"
+"лаб." = "laboratório"
+"зач." = "teste"
+"зчО." = "teste com nota"
+"экзамен" = "exame"
+"конс." = "consulta"
+
+[now]
+title = "🕐 Agora, {time}"
+in_progress = "{pair} a decorrer · {start}–{end}, faltam {left}."
+break = "Intervalo. A seguir: {pair} às {start}, daqui a {left}."
+not_started = "As aulas começam às {start}, daqui a {left}."
+done_today = "Hoje não há mais aulas."
+no_today = "Hoje não há aulas."
+next_day = "Próxima aula: {date}, às {start}."
+none_soon = "Não há aulas nas próximas duas semanas."
+dur_min = "{m} min"
+dur_h = "{h} h"
+dur_h_min = "{h} h {m} min"

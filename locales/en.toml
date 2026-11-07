@@ -1,0 +1,142 @@
+# English. Keys are the same as in ru.toml.
+#
+# Placeholders in curly braces ({group}, {time} …) are filled in by the bot —
+# don't translate or remove them. HTML tags (<b>, <code>) can stay as they are.
+# Subject names, teacher names and rooms come from the university website and stay in Russian.
+
+[lang]
+name = "English"
+prompt = "🌐 Choose your language"
+chosen = "✅ Language: English"
+
+[buttons]
+now = "🕐 Now"
+today = "📅 Today"
+tomorrow = "➡️ Tomorrow"
+week = "🗓 Week"
+next_week = "⏭ Next week"
+
+[periods]
+now = "Now"
+today = "Today"
+tomorrow = "Tomorrow"
+week = "Week"
+next_week = "Next week"
+
+[commands]
+teacher = "Teacher's schedule"
+subject = "Find a teacher by subject"
+group = "Change group"
+language = "Language"
+
+[start]
+hello = "Hi! I show the timetable of Voronezh State Pedagogical University (VSPU) from rsp-vspu.online."
+
+[group]
+prompt = """Type your group name. Part of it is enough: for example, <code>AN 251</code> finds <code>ИЯ-АН_Оb251</code>. Latin letters work too.
+
+Or choose your group from the list 👇"""
+from_list = "📋 Choose from the list"
+not_found = "Couldn't find that group 🤔 Try typing it differently or choose from the list."
+saved = """✅ Group: <b>{group}</b>
+
+Use the buttons below for your schedule: now, today, tomorrow, this week or next week.
+A teacher's schedule: /teacher or just type their surname. Change group: /group, language: /language."""
+choose_first = "Please choose your group first."
+pin = "📌 Make it my group"
+pinned_toast = "📌 Saved"
+pinned = "✅ Your group is now <b>{group}</b>. Its schedule is on the buttons below."
+nav_faculty = "Choose a faculty:"
+nav_direction = "Faculty {faculty}. Choose a programme:"
+nav_group = "Programme {direction}. Choose a group:"
+
+[teacher]
+prompt = """Whose schedule would you like to see? Type the teacher's surname, e.g. <code>Anisimova</code> or <code>Анисимова</code>. Your group won't change.
+
+Or find them by the first letter of the surname 👇"""
+by_letter = "🔤 Pick by first letter (Cyrillic)"
+not_found = "Couldn't find that teacher 🤔 Try a different spelling or pick by letter."
+nav_letter = "Choose the first letter of the surname:"
+nav_list = "Teachers starting with «{letter}»:"
+
+[subject]
+prompt = """Which subject? Type part of its name, e.g. <code>философия</code> or <code>filosofiya</code>.
+
+I'll find who teaches it and in which groups. Subject names are in Russian, as on the website."""
+not_found = "Couldn't find that subject in the timetable on the website 🤔 Try a different spelling."
+building = "The subject list is still being collected from the website — please try again in a few minutes."
+too_many = "{count} subjects match — please be more specific."
+title = "📚 Subject: «{query}»"
+legend = "⭐ — teaches in your group"
+updated = "Based on the timetable on the website, updated {date}."
+more = "And {count} more — narrow down your search to see them."
+open_hint = "Tap a teacher to open their schedule 👇"
+
+[search]
+pick = "Choose from the results:"
+too_many = "Found {count} matches — please be more specific."
+not_understood = "Sorry, I didn't get that 🤔 Type a group name or a teacher's surname. Commands: /help"
+
+[common]
+back = "« Back"
+site_down = "😔 The timetable website isn't responding right now. Please try again later."
+stale_button = "This button is outdated 🙂 Please open the schedule again."
+reset_done = "🗑 Your data has been deleted."
+help = """The buttons below show your group's schedule: now, today, tomorrow, this week or next week.
+
+/teacher — a teacher's schedule (your group stays the same)
+/subject — find a teacher by subject
+/group — change group
+/language — change language
+
+You can also just type a teacher's surname or another group's name, in Latin or Cyrillic letters.
+Subject and teacher names are shown as on the university website, in Russian."""
+
+[schedule]
+weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+months = ["January", "February", "March", "April", "May", "June",
+          "July", "August", "September", "October", "November", "December"]
+date = "{weekday}, {day} {month}"
+day_month = "{day} {month}"
+range_same_month = "{d1}–{d2} {month}"
+range = "{d1} {month1} – {d2} {month2}"
+week_title = "This week"
+next_week_title = "Next week"
+col_number = "#"
+col_time = "Time"
+col_subject = "Subject"
+col_teacher = "Teacher"
+col_groups = "Groups"
+col_room = "Room"
+no_lessons = "No classes 🎉"
+no_data = "There's no schedule for this day on the website yet."
+pair = "Class {n}"
+subgroup = "Subgroup {n}"
+saved_copy = "⚠️ The timetable website is unavailable right now. This is a saved copy from {date}, {time} — there may be changes."
+
+[week_types]
+# week type as the website writes it under the date (the timetable alternates)
+"числитель" = "numerator week"
+"знаменатель" = "denominator week"
+
+[lesson_types]
+"л." = "lecture"
+"пр." = "practical"
+"лаб." = "lab"
+"зач." = "pass/fail test"
+"зчО." = "graded test"
+"экзамен" = "exam"
+"конс." = "consultation"
+
+[now]
+title = "🕐 Now, {time}"
+in_progress = "{pair} is in progress · {start}–{end}, {left} left."
+break = "Break. Next: {pair} at {start}, in {left}."
+not_started = "Classes start at {start}, in {left}."
+done_today = "No more classes today."
+no_today = "No classes today."
+next_day = "Next class: {date}, at {start}."
+none_soon = "No classes in the next two weeks."
+dur_min = "{m} min"
+dur_h = "{h} h"
+dur_h_min = "{h} h {m} min"

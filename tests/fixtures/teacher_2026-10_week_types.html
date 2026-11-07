@@ -1,0 +1,7325 @@
+
+<!doctype html>
+<html lang='ru'>
+<head>
+  <meta charset="utf-8">
+  <title>Расписание ВГПУ</title>
+    <link rel="icon" href="/static/main/img/favicon.ico.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/main/css/main.css">
+
+</head>
+<body>
+<div class="cc">
+<div class="container">
+        <div class="header">
+            <h2>Расписание студента</h2>
+        </div>
+        <div class="probel">
+            <p> </p>
+            <p> </p>
+        </div>
+        <div class="content">
+            <label for="group-select">Выберите группу:</label>
+            <form method="post" action="/group" onsubmit="saveSelection()">
+                <input type="hidden" name="csrfmiddlewaretoken" value="EAfDOYejwDJa4XEcEC3kpA50N5k0fVCq47gA4TXzuXkvlOTjijhTHbCKUt7ZA8RU">
+                <select id="group-select" name="group" >
+                     
+                        <option value="Г-ИВ_Оb221" >Г-ИВ_Оb221</option>
+                     
+                        <option value="Г-ИВ_Оb231" >Г-ИВ_Оb231</option>
+                     
+                        <option value="Г-ИВ_Оb241" >Г-ИВ_Оb241</option>
+                     
+                        <option value="Г-ИО_Зb261" >Г-ИО_Зb261</option>
+                     
+                        <option value="Г-ИО_Оb221" >Г-ИО_Оb221</option>
+                     
+                        <option value="Г-ИО_Оb222" >Г-ИО_Оb222</option>
+                     
+                        <option value="Г-ИО_Оb231" >Г-ИО_Оb231</option>
+                     
+                        <option value="Г-ИО_Оb241" >Г-ИО_Оb241</option>
+                     
+                        <option value="Г-ИО_Оb242" >Г-ИО_Оb242</option>
+                     
+                        <option value="Г-ИО_Оb251" >Г-ИО_Оb251</option>
+                     
+                        <option value="Г-ИО_Оb252" >Г-ИО_Оb252</option>
+                     
+                        <option value="Г-ИО_Оb261" >Г-ИО_Оb261</option>
+                     
+                        <option value="Г-ИО_Оb262" >Г-ИО_Оb262</option>
+                     
+                        <option value="Г-ИО_Оg251" >Г-ИО_Оg251</option>
+                     
+                        <option value="Г-ИО_Оg261" >Г-ИО_Оg261</option>
+                     
+                        <option value="Г-ИОВ_Зb261" >Г-ИОВ_Зb261</option>
+                     
+                        <option value="Г-ИОВ_Оb251" >Г-ИОВ_Оb251</option>
+                     
+                        <option value="Г-ИОВ_Оb261" >Г-ИОВ_Оb261</option>
+                     
+                        <option value="Г-ИП_Оb221" >Г-ИП_Оb221</option>
+                     
+                        <option value="Г-ИП_Оb231" >Г-ИП_Оb231</option>
+                     
+                        <option value="Г-ИП_Оb241" >Г-ИП_Оb241</option>
+                     
+                        <option value="Г-ЛО_Оg261" >Г-ЛО_Оg261</option>
+                     
+                        <option value="Г-ЛЯЭО_Оg251" >Г-ЛЯЭО_Оg251</option>
+                     
+                        <option value="Г-МиТПО_Оa251" >Г-МиТПО_Оa251</option>
+                     
+                        <option value="Г-МиТПО_Оa261" >Г-МиТПО_Оa261</option>
+                     
+                        <option value="Г-ОИ_Оa251" >Г-ОИ_Оa251</option>
+                     
+                        <option value="Г-ОПИПиО_Оa251" >Г-ОПИПиО_Оa251</option>
+                     
+                        <option value="Г-ПВШ_Оg251" >Г-ПВШ_Оg251</option>
+                     
+                        <option value="Г-ППВ_Оg251" >Г-ППВ_Оg251</option>
+                     
+                        <option value="Г-ППВ_Оg261" >Г-ППВ_Оg261</option>
+                     
+                        <option value="Г-ПСП_Зb221" >Г-ПСП_Зb221</option>
+                     
+                        <option value="Г-ПСП_Зb261" >Г-ПСП_Зb261</option>
+                     
+                        <option value="Г-ПСП_Оb231" >Г-ПСП_Оb231</option>
+                     
+                        <option value="Г-ПСП_Оb241" >Г-ПСП_Оb241</option>
+                     
+                        <option value="Г-ПСП_Оb251" >Г-ПСП_Оb251</option>
+                     
+                        <option value="Г-ПСП_Оb261" >Г-ПСП_Оb261</option>
+                     
+                        <option value="Г-ПиПИО_Зb221" >Г-ПиПИО_Зb221</option>
+                     
+                        <option value="Г-ПиПИО_Оb231" >Г-ПиПИО_Оb231</option>
+                     
+                        <option value="Г-ПиПИО_Оb241" >Г-ПиПИО_Оb241</option>
+                     
+                        <option value="Г-ПиПИО_Оb251" >Г-ПиПИО_Оb251</option>
+                     
+                        <option value="Г-ПиПИО_Оb261" >Г-ПиПИО_Оb261</option>
+                     
+                        <option value="Г-РЛ_Зb261" >Г-РЛ_Зb261</option>
+                     
+                        <option value="Г-РЛ_Оb221" >Г-РЛ_Оb221</option>
+                     
+                        <option value="Г-РЛ_Оb222" >Г-РЛ_Оb222</option>
+                     
+                        <option value="Г-РЛ_Оb231" >Г-РЛ_Оb231</option>
+                     
+                        <option value="Г-РЛ_Оb232" >Г-РЛ_Оb232</option>
+                     
+                        <option value="Г-РЛ_Оb241" >Г-РЛ_Оb241</option>
+                     
+                        <option value="Г-РЛ_Оb242" >Г-РЛ_Оb242</option>
+                     
+                        <option value="Г-РЛ_Оb251" >Г-РЛ_Оb251</option>
+                     
+                        <option value="Г-РЛ_Оb252" >Г-РЛ_Оb252</option>
+                     
+                        <option value="Г-РЛ_Оb261" >Г-РЛ_Оb261</option>
+                     
+                        <option value="Г-РЛ_Оb262" >Г-РЛ_Оb262</option>
+                     
+                        <option value="Г-РЯЯНР_Оa251" >Г-РЯЯНР_Оa251</option>
+                     
+                        <option value="Г-РЯЯНР_Оa261" >Г-РЯЯНР_Оa261</option>
+                     
+                        <option value="Г-ЭУ_Зb221" >Г-ЭУ_Зb221</option>
+                     
+                        <option value="Г-ЭУ_Оb231" >Г-ЭУ_Оb231</option>
+                     
+                        <option value="Г-ЭУ_Оb241" >Г-ЭУ_Оb241</option>
+                     
+                        <option value="Г-ЭУ_Оb251" >Г-ЭУ_Оb251</option>
+                     
+                        <option value="Г-ЭУ_Оb261" >Г-ЭУ_Оb261</option>
+                     
+                        <option value="ЕГ-Б_Зb221" >ЕГ-Б_Зb221</option>
+                     
+                        <option value="ЕГ-Б_Зb261" >ЕГ-Б_Зb261</option>
+                     
+                        <option value="ЕГ-Б_Оb231" >ЕГ-Б_Оb231</option>
+                     
+                        <option value="ЕГ-Б_Оb241" >ЕГ-Б_Оb241</option>
+                     
+                        <option value="ЕГ-Б_Оb251" >ЕГ-Б_Оb251</option>
+                     
+                        <option value="ЕГ-Б_Оb261" >ЕГ-Б_Оb261</option>
+                     
+                        <option value="ЕГ-БИО_Оg251" >ЕГ-БИО_Оg251</option>
+                     
+                        <option value="ЕГ-ГЭ_Зb261" >ЕГ-ГЭ_Зb261</option>
+                     
+                        <option value="ЕГ-ГЭ_Оa252" >ЕГ-ГЭ_Оa252</option>
+                     
+                        <option value="ЕГ-ГЭ_Оb221" >ЕГ-ГЭ_Оb221</option>
+                     
+                        <option value="ЕГ-ГЭ_Оb231" >ЕГ-ГЭ_Оb231</option>
+                     
+                        <option value="ЕГ-ГЭ_Оb241" >ЕГ-ГЭ_Оb241</option>
+                     
+                        <option value="ЕГ-ГЭ_Оb251" >ЕГ-ГЭ_Оb251</option>
+                     
+                        <option value="ЕГ-ГЭ_Оb261" >ЕГ-ГЭ_Оb261</option>
+                     
+                        <option value="ЕГ-ХБ_Оb221" >ЕГ-ХБ_Оb221</option>
+                     
+                        <option value="ЕГ-ХБ_Оb231" >ЕГ-ХБ_Оb231</option>
+                     
+                        <option value="ЕГ-ХБ_Оb241" >ЕГ-ХБ_Оb241</option>
+                     
+                        <option value="ЕГ-ХБ_Оb251" >ЕГ-ХБ_Оb251</option>
+                     
+                        <option value="ЕГ-ХБ_Оb261" >ЕГ-ХБ_Оb261</option>
+                     
+                        <option value="ЕГ-ХО_Оg251" >ЕГ-ХО_Оg251</option>
+                     
+                        <option value="ЕГ-ХО_Оg261" >ЕГ-ХО_Оg261</option>
+                     
+                        <option value="ЕГ-ХЭ_Оb221" >ЕГ-ХЭ_Оb221</option>
+                     
+                        <option value="ЕГ-ХЭ_Оb231" >ЕГ-ХЭ_Оb231</option>
+                     
+                        <option value="ЕГ-ХЭ_Оb241" >ЕГ-ХЭ_Оb241</option>
+                     
+                        <option value="ЕГ-ХЭ_Оb251" >ЕГ-ХЭ_Оb251</option>
+                     
+                        <option value="ЕГ-ХЭ_Оb261" >ЕГ-ХЭ_Оb261</option>
+                     
+                        <option value="ЕГ-ЭКО_Оa251" >ЕГ-ЭКО_Оa251</option>
+                     
+                        <option value="ЕГ-ЭКО_Оb241" >ЕГ-ЭКО_Оb241</option>
+                     
+                        <option value="ЕГ-ЭКО_Оb251" >ЕГ-ЭКО_Оb251</option>
+                     
+                        <option value="ИЯ-АД_Оb221" >ИЯ-АД_Оb221</option>
+                     
+                        <option value="ИЯ-АД_Оb231" >ИЯ-АД_Оb231</option>
+                     
+                        <option value="ИЯ-АД_Оb241" >ИЯ-АД_Оb241</option>
+                     
+                        <option value="ИЯ-АД_Оb251" >ИЯ-АД_Оb251</option>
+                     
+                        <option value="ИЯ-АД_Оb261" >ИЯ-АД_Оb261</option>
+                     
+                        <option value="ИЯ-АН_Оb221" >ИЯ-АН_Оb221</option>
+                     
+                        <option value="ИЯ-АН_Оb231" >ИЯ-АН_Оb231</option>
+                     
+                        <option value="ИЯ-АН_Оb232" >ИЯ-АН_Оb232</option>
+                     
+                        <option value="ИЯ-АН_Оb241" >ИЯ-АН_Оb241</option>
+                     
+                        <option value="ИЯ-АН_Оb242" >ИЯ-АН_Оb242</option>
+                     
+                        <option value="ИЯ-АН_Оb251" >ИЯ-АН_Оb251</option>
+                     
+                        <option value="ИЯ-АН_Оb261" >ИЯ-АН_Оb261</option>
+                     
+                        <option value="ИЯ-АФ_Оb221" >ИЯ-АФ_Оb221</option>
+                     
+                        <option value="ИЯ-АФ_Оb231" >ИЯ-АФ_Оb231</option>
+                     
+                        <option value="ИЯ-АФ_Оb241" >ИЯ-АФ_Оb241</option>
+                     
+                        <option value="ИЯ-АФ_Оb251" >ИЯ-АФ_Оb251</option>
+                     
+                        <option value="ИЯ-АФ_Оb261" >ИЯ-АФ_Оb261</option>
+                     
+                        <option value="ИЯ-АЯ_Зb221" >ИЯ-АЯ_Зb221</option>
+                     
+                        <option value="ИЯ-АЯ_Зb222" >ИЯ-АЯ_Зb222</option>
+                     
+                        <option value="ИЯ-АЯ_Зb261" >ИЯ-АЯ_Зb261</option>
+                     
+                        <option value="ИЯ-НА_Оb221" >ИЯ-НА_Оb221</option>
+                     
+                        <option value="ИЯ-НА_Оb231" >ИЯ-НА_Оb231</option>
+                     
+                        <option value="ИЯ-НА_Оb241" >ИЯ-НА_Оb241</option>
+                     
+                        <option value="ИЯ-НА_Оb251" >ИЯ-НА_Оb251</option>
+                     
+                        <option value="ИЯ-НА_Оb261" >ИЯ-НА_Оb261</option>
+                     
+                        <option value="ИЯ-ФА_Оb221" >ИЯ-ФА_Оb221</option>
+                     
+                        <option value="ИЯ-ФА_Оb231" >ИЯ-ФА_Оb231</option>
+                     
+                        <option value="ИЯ-ФА_Оb241" >ИЯ-ФА_Оb241</option>
+                     
+                        <option value="ИЯ-ФА_Оb251" >ИЯ-ФА_Оb251</option>
+                     
+                        <option value="ИЯ-ФА_Оb261" >ИЯ-ФА_Оb261</option>
+                     
+                        <option value="ПП-ДО_Зb221" >ПП-ДО_Зb221</option>
+                     
+                        <option value="ПП-ДО_Зb261" >ПП-ДО_Зb261</option>
+                     
+                        <option value="ПП-ДО_Оb231" >ПП-ДО_Оb231</option>
+                     
+                        <option value="ПП-ДО_Оb241" >ПП-ДО_Оb241</option>
+                     
+                        <option value="ПП-ДО_Оb251" >ПП-ДО_Оb251</option>
+                     
+                        <option value="ПП-ДО_Оb261" >ПП-ДО_Оb261</option>
+                     
+                        <option value="ПП-Лог_Зb221" >ПП-Лог_Зb221</option>
+                     
+                        <option value="ПП-Лог_Зb222" >ПП-Лог_Зb222</option>
+                     
+                        <option value="ПП-Лог_Зb223" >ПП-Лог_Зb223</option>
+                     
+                        <option value="ПП-НО_Зb221" >ПП-НО_Зb221</option>
+                     
+                        <option value="ПП-НО_Зb261" >ПП-НО_Зb261</option>
+                     
+                        <option value="ПП-НО_Оb231" >ПП-НО_Оb231</option>
+                     
+                        <option value="ПП-НО_Оb241" >ПП-НО_Оb241</option>
+                     
+                        <option value="ПП-НО_Оb251" >ПП-НО_Оb251</option>
+                     
+                        <option value="ПП-НО_Оb261" >ПП-НО_Оb261</option>
+                     
+                        <option value="ПП-НО_Оb262" >ПП-НО_Оb262</option>
+                     
+                        <option value="ПП-ПО_Зb221" >ПП-ПО_Зb221</option>
+                     
+                        <option value="ПП-ПО_Зb222" >ПП-ПО_Зb222</option>
+                     
+                        <option value="ПП-ПО_Зb261" >ПП-ПО_Зb261</option>
+                     
+                        <option value="ПП-ПО_Оb231" >ПП-ПО_Оb231</option>
+                     
+                        <option value="ПП-ПО_Оb241" >ПП-ПО_Оb241</option>
+                     
+                        <option value="ПП-ПО_Оb251" >ПП-ПО_Оb251</option>
+                     
+                        <option value="ПП-ПО_Оb261" >ПП-ПО_Оb261</option>
+                     
+                        <option value="ПП-СП_Зb221" >ПП-СП_Зb221</option>
+                     
+                        <option value="ПП-СП_Оb231" >ПП-СП_Оb231</option>
+                     
+                        <option value="ПП-СП_Оb241" >ПП-СП_Оb241</option>
+                     
+                        <option value="ПП-СП_Оb251" >ПП-СП_Оb251</option>
+                     
+                        <option value="ПП-СП_Оb261" >ПП-СП_Оb261</option>
+                     
+                        <option value="СПО-ГД-11_Оp251" >СПО-ГД-11_Оp251</option>
+                     
+                        <option value="СПО-ГД-11_Оp261" >СПО-ГД-11_Оp261</option>
+                     
+                        <option value="СПО-ГД-11_Оp262" >СПО-ГД-11_Оp262</option>
+                     
+                        <option value="СПО-ГД-9_Оp241" >СПО-ГД-9_Оp241</option>
+                     
+                        <option value="СПО-ГД-9_Оp242" >СПО-ГД-9_Оp242</option>
+                     
+                        <option value="СПО-ГД-9_Оp243" >СПО-ГД-9_Оp243</option>
+                     
+                        <option value="СПО-ГД-9_Оp251" >СПО-ГД-9_Оp251</option>
+                     
+                        <option value="СПО-ГД-9_Оp252" >СПО-ГД-9_Оp252</option>
+                     
+                        <option value="СПО-ГД-9_Оp253" >СПО-ГД-9_Оp253</option>
+                     
+                        <option value="СПО-ГД-9_Оp261" >СПО-ГД-9_Оp261</option>
+                     
+                        <option value="СПО-ГД-9_Оp262" >СПО-ГД-9_Оp262</option>
+                     
+                        <option value="СПО-КП-11_Os241" >СПО-КП-11_Os241</option>
+                     
+                        <option value="СПО-КП-11_Оs241" >СПО-КП-11_Оs241</option>
+                     
+                        <option value="СПО-КП-11_Оs251" >СПО-КП-11_Оs251</option>
+                     
+                        <option value="СПО-КП-11_Оs261" >СПО-КП-11_Оs261</option>
+                     
+                        <option value="СПО-КП-9_Оs241" >СПО-КП-9_Оs241</option>
+                     
+                        <option value="СПО-КП-9_Оs242" >СПО-КП-9_Оs242</option>
+                     
+                        <option value="СПО-КП-9_Оs251" >СПО-КП-9_Оs251</option>
+                     
+                        <option value="СПО-КП-9_Оs252" >СПО-КП-9_Оs252</option>
+                     
+                        <option value="СПО-КП-9_Оs261" >СПО-КП-9_Оs261</option>
+                     
+                        <option value="СПО-КП-9_Оs262" >СПО-КП-9_Оs262</option>
+                     
+                        <option value="СПО-КП-9_Оs263" >СПО-КП-9_Оs263</option>
+                     
+                        <option value="СПО-КП-9_Оs264" >СПО-КП-9_Оs264</option>
+                     
+                        <option value="СПО-КП-9_Оs265" >СПО-КП-9_Оs265</option>
+                     
+                        <option value="СПО-ОИ-11_Оp261" >СПО-ОИ-11_Оp261</option>
+                     
+                        <option value="СПО-ТГ-11_Оs251" >СПО-ТГ-11_Оs251</option>
+                     
+                        <option value="СПО-ТГ-9_Os241" >СПО-ТГ-9_Os241</option>
+                     
+                        <option value="СПО-ТГ-9_Оs241" >СПО-ТГ-9_Оs241</option>
+                     
+                        <option value="СПО-ТГ-9_Оs251" >СПО-ТГ-9_Оs251</option>
+                     
+                        <option value="СПО-ТГ-9_Оs261" >СПО-ТГ-9_Оs261</option>
+                     
+                        <option value="СПО-ФК-11_Os241" >СПО-ФК-11_Os241</option>
+                     
+                        <option value="СПО-ФК-11_Оs241" >СПО-ФК-11_Оs241</option>
+                     
+                        <option value="СПО-ФК-11_Оs251" >СПО-ФК-11_Оs251</option>
+                     
+                        <option value="СПО-ФК-9_Os241" >СПО-ФК-9_Os241</option>
+                     
+                        <option value="СПО-ФК-9_Оs251" >СПО-ФК-9_Оs251</option>
+                     
+                        <option value="СПО-ФК-9_Оs252" >СПО-ФК-9_Оs252</option>
+                     
+                        <option value="СПО-ФК-9_Оs261" >СПО-ФК-9_Оs261</option>
+                     
+                        <option value="ФК-БЖДО_Оb221" >ФК-БЖДО_Оb221</option>
+                     
+                        <option value="ФК-БЖДО_Оb231" >ФК-БЖДО_Оb231</option>
+                     
+                        <option value="ФК-БЖДО_Оb241" >ФК-БЖДО_Оb241</option>
+                     
+                        <option value="ФК-БЖДО_Оb251" >ФК-БЖДО_Оb251</option>
+                     
+                        <option value="ФК-БЖДО_Оb261" >ФК-БЖДО_Оb261</option>
+                     
+                        <option value="ФК-БЖиТ_Оb221" >ФК-БЖиТ_Оb221</option>
+                     
+                        <option value="ФК-БЖиТ_Оb231" >ФК-БЖиТ_Оb231</option>
+                     
+                        <option value="ФК-БЖиТ_Оb241" >ФК-БЖиТ_Оb241</option>
+                     
+                        <option value="ФК-БЖиТ_Оb251" >ФК-БЖиТ_Оb251</option>
+                     
+                        <option value="ФК-БЖиТ_Оb261" >ФК-БЖиТ_Оb261</option>
+                     
+                        <option value="ФК-ОБОО_Оg251" >ФК-ОБОО_Оg251</option>
+                     
+                        <option value="ФК-ОБРвБЖ_Оg251" >ФК-ОБРвБЖ_Оg251</option>
+                     
+                        <option value="ФК-ОБРвФК_Оg251" >ФК-ОБРвФК_Оg251</option>
+                     
+                        <option value="ФК-ОБРвФК_Оg261" >ФК-ОБРвФК_Оg261</option>
+                     
+                        <option value="ФК-ТФК_Оg251" >ФК-ТФК_Оg251</option>
+                     
+                        <option value="ФК-ТиМС_Оa251" >ФК-ТиМС_Оa251</option>
+                     
+                        <option value="ФК-ФК_Зb221" >ФК-ФК_Зb221</option>
+                     
+                        <option value="ФК-ФК_Зb261" >ФК-ФК_Зb261</option>
+                     
+                        <option value="ФК-ФК_Оb231" >ФК-ФК_Оb231</option>
+                     
+                        <option value="ФК-ФК_Оb241" >ФК-ФК_Оb241</option>
+                     
+                        <option value="ФК-ФК_Оb251" >ФК-ФК_Оb251</option>
+                     
+                        <option value="ФК-ФК_Оb261" >ФК-ФК_Оb261</option>
+                     
+                        <option value="ФК-ФКБЖ_Зb261" >ФК-ФКБЖ_Зb261</option>
+                     
+                        <option value="ФК-ФКБЖ_Оb221" >ФК-ФКБЖ_Оb221</option>
+                     
+                        <option value="ФК-ФКБЖ_Оb231" >ФК-ФКБЖ_Оb231</option>
+                     
+                        <option value="ФК-ФКБЖ_Оb241" >ФК-ФКБЖ_Оb241</option>
+                     
+                        <option value="ФК-ФКБЖ_Оb251" >ФК-ФКБЖ_Оb251</option>
+                     
+                        <option value="ФК-ФКБЖ_Оb261" >ФК-ФКБЖ_Оb261</option>
+                     
+                        <option value="ФК-ФКДО_Зb261" >ФК-ФКДО_Зb261</option>
+                     
+                        <option value="ФК-ФКДО_Оb221" >ФК-ФКДО_Оb221</option>
+                     
+                        <option value="ФК-ФКДО_Оb231" >ФК-ФКДО_Оb231</option>
+                     
+                        <option value="ФК-ФКДО_Оb241" >ФК-ФКДО_Оb241</option>
+                     
+                        <option value="ФК-ФКДО_Оb251" >ФК-ФКДО_Оb251</option>
+                     
+                        <option value="ФК-ФКДО_Оb261" >ФК-ФКДО_Оb261</option>
+                     
+                        <option value="ФМ-ДУиМФ_Оa251" >ФМ-ДУиМФ_Оa251</option>
+                     
+                        <option value="ФМ-ЕФ_Оb221" >ФМ-ЕФ_Оb221</option>
+                     
+                        <option value="ФМ-ИД_Оb221" >ФМ-ИД_Оb221</option>
+                     
+                        <option value="ФМ-ИД_Оb251" >ФМ-ИД_Оb251</option>
+                     
+                        <option value="ФМ-ИД_Оb261" >ФМ-ИД_Оb261</option>
+                     
+                        <option value="ФМ-ИНФвО_Оg251" >ФМ-ИНФвО_Оg251</option>
+                     
+                        <option value="ФМ-ИНФвО_Оg261" >ФМ-ИНФвО_Оg261</option>
+                     
+                        <option value="ФМ-МИ_Зb261" >ФМ-МИ_Зb261</option>
+                     
+                        <option value="ФМ-МИ_Оb221" >ФМ-МИ_Оb221</option>
+                     
+                        <option value="ФМ-МИ_Оb231" >ФМ-МИ_Оb231</option>
+                     
+                        <option value="ФМ-МИ_Оb241" >ФМ-МИ_Оb241</option>
+                     
+                        <option value="ФМ-МИ_Оb251" >ФМ-МИ_Оb251</option>
+                     
+                        <option value="ФМ-МИ_Оb261" >ФМ-МИ_Оb261</option>
+                     
+                        <option value="ФМ-ММвЭ_Оg251" >ФМ-ММвЭ_Оg251</option>
+                     
+                        <option value="ФМ-ММвЭ_Оg261" >ФМ-ММвЭ_Оg261</option>
+                     
+                        <option value="ФМ-МО_Оg251" >ФМ-МО_Оg251</option>
+                     
+                        <option value="ФМ-МФ_Зb261" >ФМ-МФ_Зb261</option>
+                     
+                        <option value="ФМ-МФ_Оb221" >ФМ-МФ_Оb221</option>
+                     
+                        <option value="ФМ-МФ_Оb231" >ФМ-МФ_Оb231</option>
+                     
+                        <option value="ФМ-МФ_Оb241" >ФМ-МФ_Оb241</option>
+                     
+                        <option value="ФМ-МФ_Оb251" >ФМ-МФ_Оb251</option>
+                     
+                        <option value="ФМ-МФ_Оb261" >ФМ-МФ_Оb261</option>
+                     
+                        <option value="ФМ-ПМ_Оb231" >ФМ-ПМ_Оb231</option>
+                     
+                        <option value="ФМ-ПМ_Оb241" >ФМ-ПМ_Оb241</option>
+                     
+                        <option value="ФМ-ПМ_Оb261" >ФМ-ПМ_Оb261</option>
+                     
+                        <option value="ФМ-ПММ_Оb251" >ФМ-ПММ_Оb251</option>
+                     
+                        <option value="ФМ-ПО_Оg251" >ФМ-ПО_Оg251</option>
+                     
+                        <option value="ФМ-ППО_Зb261" >ФМ-ППО_Зb261</option>
+                     
+                        <option value="ФМ-ТД_Зb261" >ФМ-ТД_Зb261</option>
+                     
+                        <option value="ФМ-ТД_Оb251" >ФМ-ТД_Оb251</option>
+                     
+                        <option value="ФМ-ТД_Оb261" >ФМ-ТД_Оb261</option>
+                     
+                        <option value="ФМ-ТехДО_Оb221" >ФМ-ТехДО_Оb221</option>
+                     
+                        <option value="ФМ-ТехДО_Оb231" >ФМ-ТехДО_Оb231</option>
+                     
+                        <option value="ФМ-ТехДО_Оb241" >ФМ-ТехДО_Оb241</option>
+                     
+                        <option value="ФМ-ФИТ_Оb231" >ФМ-ФИТ_Оb231</option>
+                     
+                        <option value="ФМ-ФИТ_Оb241" >ФМ-ФИТ_Оb241</option>
+                     
+                        <option value="ФМ-ФИТ_Оb251" >ФМ-ФИТ_Оb251</option>
+                     
+                        <option value="ФМ-ФКС_Оa251" >ФМ-ФКС_Оa251</option>
+                     
+                        <option value="ФМ-ФМ_Оb261" >ФМ-ФМ_Оb261</option>
+                     
+                        <option value="ФМ-ФМО_Оg261" >ФМ-ФМО_Оg261</option>
+                     
+                        <option value="ХО-ГД_Оb231" >ХО-ГД_Оb231</option>
+                     
+                        <option value="ХО-ГД_Оb241" >ХО-ГД_Оb241</option>
+                     
+                        <option value="ХО-ГД_Оb251" >ХО-ГД_Оb251</option>
+                     
+                        <option value="ХО-ГД_Оb261" >ХО-ГД_Оb261</option>
+                     
+                        <option value="ХО-ИЗО_Зb221" >ХО-ИЗО_Зb221</option>
+                     
+                        <option value="ХО-ИЗО_Зb261" >ХО-ИЗО_Зb261</option>
+                     
+                        <option value="ХО-ИЗО_Оb231" >ХО-ИЗО_Оb231</option>
+                     
+                        <option value="ХО-ИЗО_Оb241" >ХО-ИЗО_Оb241</option>
+                     
+                        <option value="ХО-ИЗО_Оb251" >ХО-ИЗО_Оb251</option>
+                     
+                        <option value="ХО-ИЗО_Оb261" >ХО-ИЗО_Оb261</option>
+                     
+                        <option value="ХО-ИЗОД_Оg251" >ХО-ИЗОД_Оg251</option>
+                     
+                        <option value="ХО-ИЗОД_Оg261" >ХО-ИЗОД_Оg261</option>
+                     
+                        <option value="ХО-МУЗ_Зb221" >ХО-МУЗ_Зb221</option>
+                     
+                        <option value="ХО-МУЗ_Зb261" >ХО-МУЗ_Зb261</option>
+                     
+                        <option value="ХО-МУЗ_Оb231" >ХО-МУЗ_Оb231</option>
+                     
+                        <option value="ХО-МУЗ_Оb241" >ХО-МУЗ_Оb241</option>
+                     
+                        <option value="ХО-МУЗ_Оb251" >ХО-МУЗ_Оb251</option>
+                     
+                        <option value="ХО-МУЗ_Оb261" >ХО-МУЗ_Оb261</option>
+                     
+                        <option value="ХО-РХК_Зb221" >ХО-РХК_Зb221</option>
+                     
+                        <option value="ХО-РХК_Зb261" >ХО-РХК_Зb261</option>
+                     
+                        <option value="ХО-РХК_Оb231" >ХО-РХК_Оb231</option>
+                     
+                        <option value="ХО-РХК_Оb241" >ХО-РХК_Оb241</option>
+                     
+                        <option value="ХО-РХК_Оb251" >ХО-РХК_Оb251</option>
+                     
+                        <option value="ХО-РХК_Оb261" >ХО-РХК_Оb261</option>
+                     
+                </select>
+                <div>
+
+                </div>
+                <button class="btn1" type="submit" onclick="showSchedule()">Показать расписание</button>
+            </form>
+
+        </div>
+</div>
+    <div class="a"> </div>
+<div class="container2">
+        <div class="header2">
+            <h2 >Расписание преподавателя</h2>
+        </div>
+        <div class="probel">
+            <p> </p>
+            <p> </p>
+        </div>
+        <div class="content">
+            <label for="group-select">Выберите преподавателя:</label>
+            <form method="post" action="/teacher" onsubmit="saveTeacherSelection()" >
+                <input type="hidden" name="csrfmiddlewaretoken" value="EAfDOYejwDJa4XEcEC3kpA50N5k0fVCq47gA4TXzuXkvlOTjijhTHbCKUt7ZA8RU">
+                <select id="teacher-select" name="teacher" >
+                     
+                        <option value="Аврамова Т.И."  >Аврамова Т.И.</option>
+                     
+                        <option value="Акимова А.М."  >Акимова А.М.</option>
+                     
+                        <option value="Акиньшина Е.Н."  >Акиньшина Е.Н.</option>
+                     
+                        <option value="Аксенов В.П."  >Аксенов В.П.</option>
+                     
+                        <option value="Акулова Л.Н."  >Акулова Л.Н.</option>
+                     
+                        <option value="Алексеева Е.Н."  >Алексеева Е.Н.</option>
+                     
+                        <option value="Алехина Е.В."  >Алехина Е.В.</option>
+                     
+                        <option value="Алиханова В.Л."  >Алиханова В.Л.</option>
+                     
+                        <option value="Алферова С.И."  >Алферова С.И.</option>
+                     
+                        <option value="Андронов С.А."  >Андронов С.А.</option>
+                     
+                        <option value="Аникеева Т.Р."  >Аникеева Т.Р.</option>
+                     
+                        <option value="Анисимова О.Н."  >Анисимова О.Н.</option>
+                     
+                        <option value="Анищенко Р.Б."  >Анищенко Р.Б.</option>
+                     
+                        <option value="Анохина И.В."  >Анохина И.В.</option>
+                     
+                        <option value="Арзыбова Л.В."  >Арзыбова Л.В.</option>
+                     
+                        <option value="Арзямова О.В."  >Арзямова О.В.</option>
+                     
+                        <option value="Архипова А.А."  >Архипова А.А.</option>
+                     
+                        <option value="Арцыбашев А.А."  >Арцыбашев А.А.</option>
+                     
+                        <option value="Афонин Г.В."  >Афонин Г.В.</option>
+                     
+                        <option value="Афонин Н.Н."  >Афонин Н.Н.</option>
+                     
+                        <option value="Афонина С.Н."  >Афонина С.Н.</option>
+                     
+                        <option value="Бакалова Т.В."  >Бакалова Т.В.</option>
+                     
+                        <option value="Баранникова А.С."  >Баранникова А.С.</option>
+                     
+                        <option value="Баркалова А.А."  >Баркалова А.А.</option>
+                     
+                        <option value="Бармин Г.В."  >Бармин Г.В.</option>
+                     
+                        <option value="Бартенева Ю.А."  >Бартенева Ю.А.</option>
+                     
+                        <option value="Барышникова О.Г."  >Барышникова О.Г.</option>
+                     
+                        <option value="Баутина И.В."  >Баутина И.В.</option>
+                     
+                        <option value="Бахметьева И.А."  >Бахметьева И.А.</option>
+                     
+                        <option value="Бахтин Е.А."  >Бахтин Е.А.</option>
+                     
+                        <option value="Бахтина А.М."  >Бахтина А.М.</option>
+                     
+                        <option value="Башарина С.О."  >Башарина С.О.</option>
+                     
+                        <option value="Башкирева Н.В."  >Башкирева Н.В.</option>
+                     
+                        <option value="Безрукова В.В."  >Безрукова В.В.</option>
+                     
+                        <option value="Бейлина А.Ф."  >Бейлина А.Ф.</option>
+                     
+                        <option value="Белозерцев Е.П."  >Белозерцев Е.П.</option>
+                     
+                        <option value="Белоусов А.В."  >Белоусов А.В.</option>
+                     
+                        <option value="Бережная М.В."  >Бережная М.В.</option>
+                     
+                        <option value="Березкина Е.Н."  >Березкина Е.Н.</option>
+                     
+                        <option value="Березуцкий В.Д."  >Березуцкий В.Д.</option>
+                     
+                        <option value="Блаженов В.А."  >Блаженов В.А.</option>
+                     
+                        <option value="Бобонова Е.Н."  >Бобонова Е.Н.</option>
+                     
+                        <option value="Боброва О.А."  >Боброва О.А.</option>
+                     
+                        <option value="Богданова Е.Е."  >Богданова Е.Е.</option>
+                     
+                        <option value="Богданова М.В."  >Богданова М.В.</option>
+                     
+                        <option value="Богомолов Е.А."  >Богомолов Е.А.</option>
+                     
+                        <option value="Бокова О.В."  >Бокова О.В.</option>
+                     
+                        <option value="Бондаренко О.В."  >Бондаренко О.В.</option>
+                     
+                        <option value="Бондарчук Н.А."  >Бондарчук Н.А.</option>
+                     
+                        <option value="Борсяков Ю.И."  >Борсяков Ю.И.</option>
+                     
+                        <option value="Бортникова С.А."  >Бортникова С.А.</option>
+                     
+                        <option value="Брехова А.В."  >Брехова А.В.</option>
+                     
+                        <option value="Брызгалина О.С."  >Брызгалина О.С.</option>
+                     
+                        <option value="Бугаков А.И."  >Бугаков А.И.</option>
+                     
+                        <option value="Бугаков Н.И."  >Бугаков Н.И.</option>
+                     
+                        <option value="Бугакова Н.В."  >Бугакова Н.В.</option>
+                     
+                        <option value="Бунеева Е.Н."  >Бунеева Е.Н.</option>
+                     
+                        <option value="Бутова Л.М."  >Бутова Л.М.</option>
+                     
+                        <option value="Бухтоярова И.И."  >Бухтоярова И.И.</option>
+                     
+                        <option value="Быкова К.И."  >Быкова К.И.</option>
+                     
+                        <option value="Варенова О.С."  >Варенова О.С.</option>
+                     
+                        <option value="Васильева А.В."  >Васильева А.В.</option>
+                     
+                        <option value="Васильева Е.В."  >Васильева Е.В.</option>
+                     
+                        <option value="Ватутина М.В."  >Ватутина М.В.</option>
+                     
+                        <option value="Вахтель Л.В."  >Вахтель Л.В.</option>
+                     
+                        <option value="Великанов К.В."  >Великанов К.В.</option>
+                     
+                        <option value="Венгеров П.Д."  >Венгеров П.Д.</option>
+                     
+                        <option value="Веретенникова С.В."  >Веретенникова С.В.</option>
+                     
+                        <option value="Власова Н.В."  >Власова Н.В.</option>
+                     
+                        <option value="Воищева Т.А."  >Воищева Т.А.</option>
+                     
+                        <option value="Волкова А.А."  >Волкова А.А.</option>
+                     
+                        <option value="Волкова Е.Б."  >Волкова Е.Б.</option>
+                     
+                        <option value="Воробьева А.В."  >Воробьева А.В.</option>
+                     
+                        <option value="Воробьева О.С."  >Воробьева О.С.</option>
+                     
+                        <option value="Воронова Т.Е."  >Воронова Т.Е.</option>
+                     
+                        <option value="Востроилова Е.В."  >Востроилова Е.В.</option>
+                     
+                        <option value="Гаврикова Ю.С."  >Гаврикова Ю.С.</option>
+                     
+                        <option value="Гаевская О.В."  >Гаевская О.В.</option>
+                     
+                        <option value="Гетманова Е.Н."  >Гетманова Е.Н.</option>
+                     
+                        <option value="Гладуш А.О."  >Гладуш А.О.</option>
+                     
+                        <option value="Глазкова О.А."  >Глазкова О.А.</option>
+                     
+                        <option value="Глухова Н.В."  >Глухова Н.В.</option>
+                     
+                        <option value="Гнеушева Ю.М."  >Гнеушева Ю.М.</option>
+                     
+                        <option value="Головчанов С.В."  >Головчанов С.В.</option>
+                     
+                        <option value="Голукович А.Е."  >Голукович А.Е.</option>
+                     
+                        <option value="Гольдфарб М.В."  >Гольдфарб М.В.</option>
+                     
+                        <option value="Гончарова Е.В."  >Гончарова Е.В.</option>
+                     
+                        <option value="Горбачева С.С."  >Горбачева С.С.</option>
+                     
+                        <option value="Горбунов Н.А."  >Горбунов Н.А.</option>
+                     
+                        <option value="Горюнов В.А."  >Горюнов В.А.</option>
+                     
+                        <option value="Гребенкина Н.В."  >Гребенкина Н.В.</option>
+                     
+                        <option value="Гревцева В.Ф."  >Гревцева В.Ф.</option>
+                     
+                        <option value="Гренадерова Л.В."  >Гренадерова Л.В.</option>
+                     
+                        <option value="Григоренко О.В."  >Григоренко О.В.</option>
+                     
+                        <option value="Григорьев А.И."  >Григорьев А.И.</option>
+                     
+                        <option value="Григорьев О.А."  >Григорьев О.А.</option>
+                     
+                        <option value="Григорьева И.П."  >Григорьева И.П.</option>
+                     
+                        <option value="Гридяева Л.Н."  >Гридяева Л.Н.</option>
+                     
+                        <option value="Груздева М.А."  >Груздева М.А.</option>
+                     
+                        <option value="Грушко Г.И."  >Грушко Г.И.</option>
+                     
+                        <option value="Гунькина Л.С."  >Гунькина Л.С.</option>
+                     
+                        <option value="Дайнеко Е.Ю."  >Дайнеко Е.Ю.</option>
+                     
+                        <option value="Дамбе М.М."  >Дамбе М.М.</option>
+                     
+                        <option value="Дахин Д.В."  >Дахин Д.В.</option>
+                     
+                        <option value="Дедова М.С."  >Дедова М.С.</option>
+                     
+                        <option value="Демидкина Е.А."  >Демидкина Е.А.</option>
+                     
+                        <option value="Дендебер И.А."  >Дендебер И.А.</option>
+                     
+                        <option value="Денисов И.В."  >Денисов И.В.</option>
+                     
+                        <option value="Денякина О.А."  >Денякина О.А.</option>
+                     
+                        <option value="Диденко Д.А."  >Диденко Д.А.</option>
+                     
+                        <option value="Добрачева А.Н."  >Добрачева А.Н.</option>
+                     
+                        <option value="Доброва С.И."  >Доброва С.И.</option>
+                     
+                        <option value="Добросоцкая А.В."  >Добросоцкая А.В.</option>
+                     
+                        <option value="Дорохов А.Н."  >Дорохов А.Н.</option>
+                     
+                        <option value="Дорохова Л.В."  >Дорохова Л.В.</option>
+                     
+                        <option value="Дрожжина В.Н."  >Дрожжина В.Н.</option>
+                     
+                        <option value="Дронов Д.И."  >Дронов Д.И.</option>
+                     
+                        <option value="Дуванова С.П."  >Дуванова С.П.</option>
+                     
+                        <option value="Дуров Б.Ю."  >Дуров Б.Ю.</option>
+                     
+                        <option value="Дюжакова М.В."  >Дюжакова М.В.</option>
+                     
+                        <option value="Ежова А.В."  >Ежова А.В.</option>
+                     
+                        <option value="Ельчанинова С.А."  >Ельчанинова С.А.</option>
+                     
+                        <option value="Емельянова О.Я."  >Емельянова О.Я.</option>
+                     
+                        <option value="Ермакова И.Е."  >Ермакова И.Е.</option>
+                     
+                        <option value="Ерошенко А.Ю."  >Ерошенко А.Ю.</option>
+                     
+                        <option value="Ерошенко Ю.В."  >Ерошенко Ю.В.</option>
+                     
+                        <option value="Ершова А.Н."  >Ершова А.Н.</option>
+                     
+                        <option value="Ефремова Н.С."  >Ефремова Н.С.</option>
+                     
+                        <option value="Жегульская Т.Ю."  >Жегульская Т.Ю.</option>
+                     
+                        <option value="Жеребцова В.А."  >Жеребцова В.А.</option>
+                     
+                        <option value="Жукова А.М."  >Жукова А.М.</option>
+                     
+                        <option value="Жукова М.И."  >Жукова М.И.</option>
+                     
+                        <option value="Заварзина Г.А."  >Заварзина Г.А.</option>
+                     
+                        <option value="Завиша Т.В."  >Завиша Т.В.</option>
+                     
+                        <option value="Зайцев А.Н."  >Зайцев А.Н.</option>
+                     
+                        <option value="Зарудняя И.В."  >Зарудняя И.В.</option>
+                     
+                        <option value="Зацепина А.В."  >Зацепина А.В.</option>
+                     
+                        <option value="Звонарева Е.А."  >Звонарева Е.А.</option>
+                     
+                        <option value="Земледельцев В.В."  >Земледельцев В.В.</option>
+                     
+                        <option value="Зленко И.П."  >Зленко И.П.</option>
+                     
+                        <option value="Зуев А.Л."  >Зуев А.Л.</option>
+                     
+                        <option value="Зяблова Н.Н."  >Зяблова Н.Н.</option>
+                     
+                        <option value="И?."  >И?.</option>
+                     
+                        <option value="Иванов О.Я."  >Иванов О.Я.</option>
+                     
+                        <option value="Иванова Н.А."  >Иванова Н.А.</option>
+                     
+                        <option value="Иваньшина Е.А."  >Иваньшина Е.А.</option>
+                     
+                        <option value="Игнатенко Н.А."  >Игнатенко Н.А.</option>
+                     
+                        <option value="Измалков А.А."  >Измалков А.А.</option>
+                     
+                        <option value="Иконников С.А."  >Иконников С.А.</option>
+                     
+                        <option value="Ипатов А.М."  >Ипатов А.М.</option>
+                     
+                        <option value="Исаев Е.А."  >Исаев Е.А.</option>
+                     
+                        <option value="Кадурин В.В."  >Кадурин В.В.</option>
+                     
+                        <option value="Казарцева С.Н."  >Казарцева С.Н.</option>
+                     
+                        <option value="Казьмин Д.А."  >Казьмин Д.А.</option>
+                     
+                        <option value="Калагастова А.В."  >Калагастова А.В.</option>
+                     
+                        <option value="Калинин А.В."  >Калинин А.В.</option>
+                     
+                        <option value="Камбур Д.К."  >Камбур Д.К.</option>
+                     
+                        <option value="Капкова С.Ю."  >Капкова С.Ю.</option>
+                     
+                        <option value="Капленко В.П."  >Капленко В.П.</option>
+                     
+                        <option value="Кармазина О.В."  >Кармазина О.В.</option>
+                     
+                        <option value="Картышева С.И."  >Картышева С.И.</option>
+                     
+                        <option value="Киктева Е.И."  >Киктева Е.И.</option>
+                     
+                        <option value="Килейников В.В."  >Килейников В.В.</option>
+                     
+                        <option value="Кирьянова М.Л."  >Кирьянова М.Л.</option>
+                     
+                        <option value="Киселева Е.И."  >Киселева Е.И.</option>
+                     
+                        <option value="Кислинская Г.Е."  >Кислинская Г.Е.</option>
+                     
+                        <option value="Клевина М.Н."  >Клевина М.Н.</option>
+                     
+                        <option value="Клейменова М.В."  >Клейменова М.В.</option>
+                     
+                        <option value="Клементьева И.Ю."  >Клементьева И.Ю.</option>
+                     
+                        <option value="Клепач Ю.В."  >Клепач Ю.В.</option>
+                     
+                        <option value="Клинов А.И."  >Клинов А.И.</option>
+                     
+                        <option value="Ключникова Н.В."  >Ключникова Н.В.</option>
+                     
+                        <option value="Коваленко М.С."  >Коваленко М.С.</option>
+                     
+                        <option value="Козленко П.С."  >Козленко П.С.</option>
+                     
+                        <option value="Козлова Т.А."  >Козлова Т.А.</option>
+                     
+                        <option value="Козловская О.Б."  >Козловская О.Б.</option>
+                     
+                        <option value="Кокина Н.А."  >Кокина Н.А.</option>
+                     
+                        <option value="Колесникова Е.И."  >Колесникова Е.И.</option>
+                     
+                        <option value="Колесникова И.А."  >Колесникова И.А.</option>
+                     
+                        <option value="Колодина Н.И."  >Колодина Н.И.</option>
+                     
+                        <option value="Коломеец А.В."  >Коломеец А.В.</option>
+                     
+                        <option value="Колосова Е.В."  >Колосова Е.В.</option>
+                     
+                        <option value="Комиссарова О.В."  >Комиссарова О.В.</option>
+                     
+                        <option value="Коновалов А.А."  >Коновалов А.А.</option>
+                     
+                        <option value="Кончаков Р.А."  >Кончаков Р.А.</option>
+                     
+                        <option value="Корденко А.Н."  >Корденко А.Н.</option>
+                     
+                        <option value="Корецкая И.И."  >Корецкая И.И.</option>
+                     
+                        <option value="Корзникова Т.П."  >Корзникова Т.П.</option>
+                     
+                        <option value="Корнев С.В."  >Корнев С.В.</option>
+                     
+                        <option value="Корниенко Т.В."  >Корниенко Т.В.</option>
+                     
+                        <option value="Коровин Н.Р."  >Коровин Н.Р.</option>
+                     
+                        <option value="Королев А.С."  >Королев А.С.</option>
+                     
+                        <option value="Косаренко О.Т."  >Косаренко О.Т.</option>
+                     
+                        <option value="Косаренко С.В."  >Косаренко С.В.</option>
+                     
+                        <option value="Косова Е.В."  >Косова Е.В.</option>
+                     
+                        <option value="Костина И.Б."  >Костина И.Б.</option>
+                     
+                        <option value="Кочергин В.В."  >Кочергин В.В.</option>
+                     
+                        <option value="Кочергина Е.А."  >Кочергина Е.А.</option>
+                     
+                        <option value="Кочергина Н.И."  >Кочергина Н.И.</option>
+                     
+                        <option value="Кочеткова А.В."  >Кочеткова А.В.</option>
+                     
+                        <option value="Красова В.В."  >Красова В.В.</option>
+                     
+                        <option value="Кривова Н.И."  >Кривова Н.И.</option>
+                     
+                        <option value="Кривцова М.А."  >Кривцова М.А.</option>
+                     
+                        <option value="Кровяков Д.А."  >Кровяков Д.А.</option>
+                     
+                        <option value="Крохина Е.В."  >Крохина Е.В.</option>
+                     
+                        <option value="Крутских О.А."  >Крутских О.А.</option>
+                     
+                        <option value="Кубряков Е.А."  >Кубряков Е.А.</option>
+                     
+                        <option value="Кувшинова Н.М."  >Кувшинова Н.М.</option>
+                     
+                        <option value="Кудинова Ю.В."  >Кудинова Ю.В.</option>
+                     
+                        <option value="Кузнецов И.М."  >Кузнецов И.М.</option>
+                     
+                        <option value="Кузнецова В.В."  >Кузнецова В.В.</option>
+                     
+                        <option value="Кузнецова Е.С."  >Кузнецова Е.С.</option>
+                     
+                        <option value="Кузнецова М.Ю."  >Кузнецова М.Ю.</option>
+                     
+                        <option value="Кузнецова О.В."  >Кузнецова О.В.</option>
+                     
+                        <option value="Кузьменко Н.И."  >Кузьменко Н.И.</option>
+                     
+                        <option value="Кульневич Т.В."  >Кульневич Т.В.</option>
+                     
+                        <option value="Кунаковская Л.А."  >Кунаковская Л.А.</option>
+                     
+                        <option value="Лавлинская Е.С."  >Лавлинская Е.С.</option>
+                     
+                        <option value="Лавлинская О.И."  >Лавлинская О.И.</option>
+                     
+                        <option value="Лагазяк О.А."  >Лагазяк О.А.</option>
+                     
+                        <option value="Ладыкина Т.А."  >Ладыкина Т.А.</option>
+                     
+                        <option value="Лактионов В.В."  >Лактионов В.В.</option>
+                     
+                        <option value="Ланина Н.В."  >Ланина Н.В.</option>
+                     
+                        <option value="Ларина Т.В."  >Ларина Т.В.</option>
+                     
+                        <option value="Лахина А.А."  >Лахина А.А.</option>
+                     
+                        <option value="Лебедева Н.С."  >Лебедева Н.С.</option>
+                     
+                        <option value="Леденёва В.Н."  >Леденёва В.Н.</option>
+                     
+                        <option value="Лемешкин А.В."  >Лемешкин А.В.</option>
+                     
+                        <option value="Лепехина Г.И."  >Лепехина Г.И.</option>
+                     
+                        <option value="Летин А.Л."  >Летин А.Л.</option>
+                     
+                        <option value="Литвинова Т.А."  >Литвинова Т.А.</option>
+                     
+                        <option value="Литвинова Т.И."  >Литвинова Т.И.</option>
+                     
+                        <option value="Лихачева В.С."  >Лихачева В.С.</option>
+                     
+                        <option value="Личман И.Д."  >Личман И.Д.</option>
+                     
+                        <option value="Лобачев В.В."  >Лобачев В.В.</option>
+                     
+                        <option value="Лобова Л.Г."  >Лобова Л.Г.</option>
+                     
+                        <option value="Логвиненко А.Ю."  >Логвиненко А.Ю.</option>
+                     
+                        <option value="Луговская Л.А."  >Луговская Л.А.</option>
+                     
+                        <option value="Лукин Ю.А."  >Лукин Ю.А.</option>
+                     
+                        <option value="Любова С.Г."  >Любова С.Г.</option>
+                     
+                        <option value="Макаров А.С."  >Макаров А.С.</option>
+                     
+                        <option value="Макогонова А.Н."  >Макогонова А.Н.</option>
+                     
+                        <option value="Малахова Т.В."  >Малахова Т.В.</option>
+                     
+                        <option value="Малев В.В."  >Малев В.В.</option>
+                     
+                        <option value="Малева А.А."  >Малева А.А.</option>
+                     
+                        <option value="Малютина Т.П."  >Малютина Т.П.</option>
+                     
+                        <option value="Мануковская Л.Б."  >Мануковская Л.Б.</option>
+                     
+                        <option value="Мануковская М.А."  >Мануковская М.А.</option>
+                     
+                        <option value="Мануковская Т.Е."  >Мануковская Т.Е.</option>
+                     
+                        <option value="Маркина Д.С."  >Маркина Д.С.</option>
+                     
+                        <option value="Маркова И.И."  >Маркова И.И.</option>
+                     
+                        <option value="Маслова И.Н."  >Маслова И.Н.</option>
+                     
+                        <option value="Маслова О.О."  >Маслова О.О.</option>
+                     
+                        <option value="Махинин А.Н."  >Махинин А.Н.</option>
+                     
+                        <option value="Медведева Ю.С."  >Медведева Ю.С.</option>
+                     
+                        <option value="Мелещенко Т.В."  >Мелещенко Т.В.</option>
+                     
+                        <option value="Меркулов А.Н."  >Меркулов А.Н.</option>
+                     
+                        <option value="Мехтиева М.Б."  >Мехтиева М.Б.</option>
+                     
+                        <option value="Минькович Т.В."  >Минькович Т.В.</option>
+                     
+                        <option value="Мишунина А.Г."  >Мишунина А.Г.</option>
+                     
+                        <option value="Молчанова В.А."  >Молчанова В.А.</option>
+                     
+                        <option value="Морозова В.В."  >Морозова В.В.</option>
+                     
+                        <option value="Москалева Е.А."  >Москалева Е.А.</option>
+                     
+                        <option value="Москаленко В.В."  >Москаленко В.В.</option>
+                     
+                        <option value="Мудрая М.В."  >Мудрая М.В.</option>
+                     
+                        <option value="Мякушкина О.В."  >Мякушкина О.В.</option>
+                     
+                        <option value="Насонова Д.В."  >Насонова Д.В.</option>
+                     
+                        <option value="Наумов О.Е."  >Наумов О.Е.</option>
+                     
+                        <option value="Неделина С.В."  >Неделина С.В.</option>
+                     
+                        <option value="Некрылова О.А."  >Некрылова О.А.</option>
+                     
+                        <option value="Немыкин А.Я."  >Немыкин А.Я.</option>
+                     
+                        <option value="Нестерова И.Н."  >Нестерова И.Н.</option>
+                     
+                        <option value="Неценко О.В."  >Неценко О.В.</option>
+                     
+                        <option value="Нечепаева С.А."  >Нечепаева С.А.</option>
+                     
+                        <option value="Никишин С.В."  >Никишин С.В.</option>
+                     
+                        <option value="Никулина Е.Ю."  >Никулина Е.Ю.</option>
+                     
+                        <option value="Новикова З.Н."  >Новикова З.Н.</option>
+                     
+                        <option value="Овсянникова А.Н."  >Овсянникова А.Н.</option>
+                     
+                        <option value="Овчинникова О.В."  >Овчинникова О.В.</option>
+                     
+                        <option value="Орлова Г.В."  >Орлова Г.В.</option>
+                     
+                        <option value="Осипенко И.В."  >Осипенко И.В.</option>
+                     
+                        <option value="Палагина О.И."  >Палагина О.И.</option>
+                     
+                        <option value="Панина Л.Ю."  >Панина Л.Ю.</option>
+                     
+                        <option value="Паничева В.В."  >Паничева В.В.</option>
+                     
+                        <option value="Пахомова Е.Ю."  >Пахомова Е.Ю.</option>
+                     
+                        <option value="Пашкун О.В."  >Пашкун О.В.</option>
+                     
+                        <option value="Пенькова А.А."  >Пенькова А.А.</option>
+                     
+                        <option value="Перепелицын А.В."  >Перепелицын А.В.</option>
+                     
+                        <option value="Петелина Е.А."  >Петелина Е.А.</option>
+                     
+                        <option value="Петросян Г.Г."  >Петросян Г.Г.</option>
+                     
+                        <option value="Петросянц В.Р."  >Петросянц В.Р.</option>
+                     
+                        <option value="Петрухин С.В."  >Петрухин С.В.</option>
+                     
+                        <option value="Петрухина А.Р."  >Петрухина А.Р.</option>
+                     
+                        <option value="Петько С.Н."  >Петько С.Н.</option>
+                     
+                        <option value="Печенкин С.В."  >Печенкин С.В.</option>
+                     
+                        <option value="Пешкова И.А."  >Пешкова И.А.</option>
+                     
+                        <option value="Пинчукова М.В."  >Пинчукова М.В.</option>
+                     
+                        <option value="Пискунова О.В."  >Пискунова О.В.</option>
+                     
+                        <option value="Плешкова Ю.П."  >Плешкова Ю.П.</option>
+                     
+                        <option value="Плотников С.Н."  >Плотников С.Н.</option>
+                     
+                        <option value="Поветкина Т.Е."  >Поветкина Т.Е.</option>
+                     
+                        <option value="Позднякова Т.Н."  >Позднякова Т.Н.</option>
+                     
+                        <option value="Покорная И.Ю."  >Покорная И.Ю.</option>
+                     
+                        <option value="Поленякин И.В."  >Поленякин И.В.</option>
+                     
+                        <option value="Полякова Л.В."  >Полякова Л.В.</option>
+                     
+                        <option value="Полякова Н.В."  >Полякова Н.В.</option>
+                     
+                        <option value="Померанцев Ю.А."  >Померанцев Ю.А.</option>
+                     
+                        <option value="Пономарева З.В."  >Пономарева З.В.</option>
+                     
+                        <option value="Пономарёва Д.Н."  >Пономарёва Д.Н.</option>
+                     
+                        <option value="Попова Е.А."  >Попова Е.А.</option>
+                     
+                        <option value="Преображенская И.Н."  >Преображенская И.Н.</option>
+                     
+                        <option value="Пронин С.Б."  >Пронин С.Б.</option>
+                     
+                        <option value="Проскурина Л.К."  >Проскурина Л.К.</option>
+                     
+                        <option value="Проскурина Н.В."  >Проскурина Н.В.</option>
+                     
+                        <option value="Путенко Я.С."  >Путенко Я.С.</option>
+                     
+                        <option value="Пшегорская Ю.В."  >Пшегорская Ю.В.</option>
+                     
+                        <option value="Пятаева И.В."  >Пятаева И.В.</option>
+                     
+                        <option value="Работкина О.Е."  >Работкина О.Е.</option>
+                     
+                        <option value="Ракитина Г.А."  >Ракитина Г.А.</option>
+                     
+                        <option value="Ракитина И.В."  >Ракитина И.В.</option>
+                     
+                        <option value="Резанович И.В."  >Резанович И.В.</option>
+                     
+                        <option value="Ретюнских М.Е."  >Ретюнских М.Е.</option>
+                     
+                        <option value="Рогов М.В."  >Рогов М.В.</option>
+                     
+                        <option value="Рогова Е.Е."  >Рогова Е.Е.</option>
+                     
+                        <option value="Роньшина Т.Н."  >Роньшина Т.Н.</option>
+                     
+                        <option value="Рудакова Е.П."  >Рудакова Е.П.</option>
+                     
+                        <option value="Ручкина Л.Н."  >Ручкина Л.Н.</option>
+                     
+                        <option value="Рябцева М.Ю."  >Рябцева М.Ю.</option>
+                     
+                        <option value="Рябышева Е.Н."  >Рябышева Е.Н.</option>
+                     
+                        <option value="Ряполова Е.Н."  >Ряполова Е.Н.</option>
+                     
+                        <option value="Сабирова И.А."  >Сабирова И.А.</option>
+                     
+                        <option value="Савенкова А.И."  >Савенкова А.И.</option>
+                     
+                        <option value="Савенкова М.М."  >Савенкова М.М.</option>
+                     
+                        <option value="Савинков С.В."  >Савинков С.В.</option>
+                     
+                        <option value="Сазонова С.А."  >Сазонова С.А.</option>
+                     
+                        <option value="Сакоренко И.В."  >Сакоренко И.В.</option>
+                     
+                        <option value="Саликова Е.Н."  >Саликова Е.Н.</option>
+                     
+                        <option value="Самойлов Д.А."  >Самойлов Д.А.</option>
+                     
+                        <option value="Самойлова Е.О."  >Самойлова Е.О.</option>
+                     
+                        <option value="Санина М.Ю."  >Санина М.Ю.</option>
+                     
+                        <option value="Сапелкина А.А."  >Сапелкина А.А.</option>
+                     
+                        <option value="Сарычев В.В."  >Сарычев В.В.</option>
+                     
+                        <option value="Сафонов С.А."  >Сафонов С.А.</option>
+                     
+                        <option value="Сафонова В.А."  >Сафонова В.А.</option>
+                     
+                        <option value="Свиридова А.Ю."  >Свиридова А.Ю.</option>
+                     
+                        <option value="Свиридова Е.И."  >Свиридова Е.И.</option>
+                     
+                        <option value="Свистова И.Д."  >Свистова И.Д.</option>
+                     
+                        <option value="Севастьянов В.В."  >Севастьянов В.В.</option>
+                     
+                        <option value="Северинова Л.И."  >Северинова Л.И.</option>
+                     
+                        <option value="Севрюков С.Т."  >Севрюков С.Т.</option>
+                     
+                        <option value="Севрюкова А.Н."  >Севрюкова А.Н.</option>
+                     
+                        <option value="Седова Е.Е."  >Седова Е.Е.</option>
+                     
+                        <option value="Селигеева И.Р."  >Селигеева И.Р.</option>
+                     
+                        <option value="Серганова Т.В."  >Серганова Т.В.</option>
+                     
+                        <option value="Сергеева О.В."  >Сергеева О.В.</option>
+                     
+                        <option value="Сердюкова Л.В."  >Сердюкова Л.В.</option>
+                     
+                        <option value="Силина Ю.А."  >Силина Ю.А.</option>
+                     
+                        <option value="Сильвестров И.Е."  >Сильвестров И.Е.</option>
+                     
+                        <option value="Ситникова Д.Ю."  >Ситникова Д.Ю.</option>
+                     
+                        <option value="Слинько М.А."  >Слинько М.А.</option>
+                     
+                        <option value="Смирнова К.С."  >Смирнова К.С.</option>
+                     
+                        <option value="Смирнова Т.Н."  >Смирнова Т.Н.</option>
+                     
+                        <option value="Собянина А.А."  >Собянина А.А.</option>
+                     
+                        <option value="Соколова В.Н."  >Соколова В.Н.</option>
+                     
+                        <option value="Соколова Е.В."  >Соколова Е.В.</option>
+                     
+                        <option value="Соколова Н.В."  >Соколова Н.В.</option>
+                     
+                        <option value="Солодовченко Л.Н."  >Солодовченко Л.Н.</option>
+                     
+                        <option value="Солодовченко С.А."  >Солодовченко С.А.</option>
+                     
+                        <option value="Соломатина Г.Ю."  >Соломатина Г.Ю.</option>
+                     
+                        <option value="Сопова Н.В."  >Сопова Н.В.</option>
+                     
+                        <option value="Сребрянская Н.А."  >Сребрянская Н.А.</option>
+                     
+                        <option value="Стеблецов Е.А."  >Стеблецов Е.А.</option>
+                     
+                        <option value="Стрельцова А.В."  >Стрельцова А.В.</option>
+                     
+                        <option value="Стрельцова А.В. (ГФ)"  >Стрельцова А.В. (ГФ)</option>
+                     
+                        <option value="Строкова Н.В."  >Строкова Н.В.</option>
+                     
+                        <option value="Строчилина Т.В."  >Строчилина Т.В.</option>
+                     
+                        <option value="Струкова Т.Г."  >Струкова Т.Г.</option>
+                     
+                        <option value="Стуколова Г.П."  >Стуколова Г.П.</option>
+                     
+                        <option value="Сулимов С.И."  >Сулимов С.И.</option>
+                     
+                        <option value="Сумин В.И."  >Сумин В.И.</option>
+                     
+                        <option value="Сырых Т.В."  >Сырых Т.В.</option>
+                     
+                        <option value="Сысоев Г.Д."  >Сысоев Г.Д.</option>
+                     
+                        <option value="Сысоева Л.Н."  >Сысоева Л.Н.</option>
+                     
+                        <option value="Сычева И.В."  >Сычева И.В.</option>
+                     
+                        <option value="Талтынова Е.В."  >Талтынова Е.В.</option>
+                     
+                        <option value="Тарасов В.И."  >Тарасов В.И.</option>
+                     
+                        <option value="Татаринцев А.Ю."  >Татаринцев А.Ю.</option>
+                     
+                        <option value="Татаринцева А.Ю."  >Татаринцева А.Ю.</option>
+                     
+                        <option value="Терехова З.М."  >Терехова З.М.</option>
+                     
+                        <option value="Тимофеев А.Н."  >Тимофеев А.Н.</option>
+                     
+                        <option value="Тимошина Т.В."  >Тимошина Т.В.</option>
+                     
+                        <option value="Титоренко С.А."  >Титоренко С.А.</option>
+                     
+                        <option value="Ткачева Н.Н."  >Ткачева Н.Н.</option>
+                     
+                        <option value="Токарева О.Е."  >Токарева О.Е.</option>
+                     
+                        <option value="Токарева С.С."  >Токарева С.С.</option>
+                     
+                        <option value="Толстиков А.С."  >Толстиков А.С.</option>
+                     
+                        <option value="Толстых С.К."  >Толстых С.К.</option>
+                     
+                        <option value="Топилина Ю.Ф."  >Топилина Ю.Ф.</option>
+                     
+                        <option value="Трунова М.В."  >Трунова М.В.</option>
+                     
+                        <option value="Удодов А.Б."  >Удодов А.Б.</option>
+                     
+                        <option value="Ульвачёва Т.А."  >Ульвачёва Т.А.</option>
+                     
+                        <option value="Уроженко А.В."  >Уроженко А.В.</option>
+                     
+                        <option value="Ускова А.И."  >Ускова А.И.</option>
+                     
+                        <option value="Успенский К.В."  >Успенский К.В.</option>
+                     
+                        <option value="Учитель 1"  >Учитель 1</option>
+                     
+                        <option value="Учитель 2"  >Учитель 2</option>
+                     
+                        <option value="Учитель 3"  >Учитель 3</option>
+                     
+                        <option value="Учитель 4"  >Учитель 4</option>
+                     
+                        <option value="Фалеева Н.М."  >Фалеева Н.М.</option>
+                     
+                        <option value="Федкевич В.В."  >Федкевич В.В.</option>
+                     
+                        <option value="Федюнин И.В."  >Федюнин И.В.</option>
+                     
+                        <option value="Фетисов А.С."  >Фетисов А.С.</option>
+                     
+                        <option value="Филатова Л.Э."  >Филатова Л.Э.</option>
+                     
+                        <option value="Филатова М.И."  >Филатова М.И.</option>
+                     
+                        <option value="Филоненко Т.В."  >Филоненко Т.В.</option>
+                     
+                        <option value="Фирсова И.И."  >Фирсова И.И.</option>
+                     
+                        <option value="Фирстова Е.В."  >Фирстова Е.В.</option>
+                     
+                        <option value="Фоминов В.В."  >Фоминов В.В.</option>
+                     
+                        <option value="Фурсов В.Н."  >Фурсов В.Н.</option>
+                     
+                        <option value="Фёдоров П.А."  >Фёдоров П.А.</option>
+                     
+                        <option value="Фёдорова В.П."  >Фёдорова В.П.</option>
+                     
+                        <option value="Харченко Г.Ю."  >Харченко Г.Ю.</option>
+                     
+                        <option value="Харьковский Н.П."  >Харьковский Н.П.</option>
+                     
+                        <option value="Хахалева Н.Н."  >Хахалева Н.Н.</option>
+                     
+                        <option value="Хвостикова Л.А."  >Хвостикова Л.А.</option>
+                     
+                        <option value="Хмырова А.А."  >Хмырова А.А.</option>
+                     
+                        <option value="Хожайнова М.С."  >Хожайнова М.С.</option>
+                     
+                        <option value="Хоник В.А."  >Хоник В.А.</option>
+                     
+                        <option value="Хорольская Н.В."  >Хорольская Н.В.</option>
+                     
+                        <option value="Хорошилов В.Н."  >Хорошилов В.Н.</option>
+                     
+                        <option value="Хохлова А.В."  >Хохлова А.В.</option>
+                     
+                        <option value="Хренова Н.Ф."  >Хренова Н.Ф.</option>
+                     
+                        <option value="Хрипунова И.И."  >Хрипунова И.И.</option>
+                     
+                        <option value="Худякова Т.Л."  >Худякова Т.Л.</option>
+                     
+                        <option value="Черенков И.Ю."  >Черенков И.Ю.</option>
+                     
+                        <option value="Черникова С.Н."  >Черникова С.Н.</option>
+                     
+                        <option value="Черноус Т.М."  >Черноус Т.М.</option>
+                     
+                        <option value="Чернышова В.Н."  >Чернышова В.Н.</option>
+                     
+                        <option value="Чернышёва Е.И."  >Чернышёва Е.И.</option>
+                     
+                        <option value="Четкин О.В."  >Четкин О.В.</option>
+                     
+                        <option value="Чубур Т.А."  >Чубур Т.А.</option>
+                     
+                        <option value="Чудинова Т.А."  >Чудинова Т.А.</option>
+                     
+                        <option value="Чудинский Р.М."  >Чудинский Р.М.</option>
+                     
+                        <option value="Чурсина М.А."  >Чурсина М.А.</option>
+                     
+                        <option value="Шакурова М.В."  >Шакурова М.В.</option>
+                     
+                        <option value="Шахова Н.В."  >Шахова Н.В.</option>
+                     
+                        <option value="Шацких М.А."  >Шацких М.А.</option>
+                     
+                        <option value="Шевцова М.А."  >Шевцова М.А.</option>
+                     
+                        <option value="Шилкина К.В."  >Шилкина К.В.</option>
+                     
+                        <option value="Шипилов А.В."  >Шипилов А.В.</option>
+                     
+                        <option value="Шишкина А.А."  >Шишкина А.А.</option>
+                     
+                        <option value="Шишов В.В."  >Шишов В.В.</option>
+                     
+                        <option value="Шмелева С.А."  >Шмелева С.А.</option>
+                     
+                        <option value="Шмойлова А.И."  >Шмойлова А.И.</option>
+                     
+                        <option value="Шпаковский В.Е."  >Шпаковский В.Е.</option>
+                     
+                        <option value="Шпилевая Г.А."  >Шпилевая Г.А.</option>
+                     
+                        <option value="Шурупова Т.Ю."  >Шурупова Т.Ю.</option>
+                     
+                        <option value="Шустова И.Н."  >Шустова И.Н.</option>
+                     
+                        <option value="Щедрина С.В."  >Щедрина С.В.</option>
+                     
+                        <option value="Щербакова М.В."  >Щербакова М.В.</option>
+                     
+                        <option value="Щиголева Н.В."  >Щиголева Н.В.</option>
+                     
+                        <option value="Щукина А.Ю."  >Щукина А.Ю.</option>
+                     
+                        <option value="Юдина В.С."  >Юдина В.С.</option>
+                     
+                        <option value="Юрова М.С."  >Юрова М.С.</option>
+                     
+                        <option value="Якушева Н.Э."  >Якушева Н.Э.</option>
+                     
+                        <option value="Яркин Б.Д."  >Яркин Б.Д.</option>
+                     
+                        <option value="Яркина Л.В."  >Яркина Л.В.</option>
+                     
+                        <option value="Яцковская И.Ф."  >Яцковская И.Ф.</option>
+                     
+                </select>
+                 <div>
+
+                </div>
+                <button class="btn2" type="submit" onclick="showSchedule()">Показать расписание</button>
+            </form>
+
+        </div>
+</div>
+    </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Установка выбранной группы из localStorage
+        var selectedGroup = localStorage.getItem('selected_group');
+        if (selectedGroup) {
+            document.getElementById('group-select').value = selectedGroup;
+        }
+
+        // Установка выбранного учителя из localStorage
+        var selectedTeacher = localStorage.getItem('selected_teacher');
+        if (selectedTeacher) {
+            document.getElementById('teacher-select').value = selectedTeacher;
+        }
+    });
+
+    function saveSelection() {
+        var select = document.getElementById('group-select');
+        var selectedGroup = select.options[select.selectedIndex].value;
+        localStorage.setItem('selected_group', selectedGroup);
+    }
+
+    function saveTeacherSelection() {
+        var select = document.getElementById('teacher-select');
+        var selectedTeacher = select.options[select.selectedIndex].value;
+        localStorage.setItem('selected_teacher', selectedTeacher);
+    }
+</script>
+
+
+
+<p></p>
+<div class="tb">
+
+
+               
+               
+               
+    <div class="tab">
+<table >
+    <tr class="rg">
+    <tr style="font-weight:bold">
+        <td class="data">Дата</td>
+        <td class="day">День</td>
+        <td class="time">Время</td>
+        <td class="para" style="width: 600px;">     </td>
+    </tr>
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 12-10-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПН</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 13-10-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Практическая грамматика первого  иностранного языка(пр.)-4-404[ИЯ-АФ_Оb261] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Функциональная грамматика первого иностранного языка(пр.)-4-505[ИЯ-АФ_Оb241] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 14-10-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> СР</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-505[ИЯ-АФ_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 15-10-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ЧТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-510[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >  Практическая грамматика первого  иностранного языка(пр.)-4-404[ИЯ-АФ_Оb261] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 16-10-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 17-10-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> СБ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 18-10-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВС</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 19-10-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПН</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 20-10-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >  Функциональная грамматика первого иностранного языка(пр.)-4-505[ИЯ-АФ_Оb241] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 21-10-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> СР</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-513[ИЯ-АФ_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практическая грамматика первого  иностранного языка(пр.)-4-404[ИЯ-АФ_Оb261] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 22-10-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ЧТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-410[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-505[ИЯ-АФ_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Функциональная грамматика первого иностранного языка(пр.)-4-505[ИЯ-АФ_Оb241] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 23-10-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 24-10-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> СБ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 25-10-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВС</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 26-10-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПН</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 27-10-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Практическая грамматика первого  иностранного языка(пр.)-4-404[ИЯ-АФ_Оb261] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Функциональная грамматика первого иностранного языка(пр.)-4-505[ИЯ-АФ_Оb241] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 28-10-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> СР</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-505[ИЯ-АФ_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 29-10-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ЧТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-510[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >  Практическая грамматика первого  иностранного языка(пр.)-4-404[ИЯ-АФ_Оb261] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 30-10-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 31-10-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> СБ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 01-11-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВС</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 02-11-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПН</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 03-11-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >  Функциональная грамматика первого иностранного языка(пр.)-4-505[ИЯ-АФ_Оb241] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 04-11-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> СР</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 05-11-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ЧТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-410[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-505[ИЯ-АФ_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Функциональная грамматика первого иностранного языка(пр.)-4-505[ИЯ-АФ_Оb241] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 06-11-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 07-11-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> СБ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 08-11-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВС</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 09-11-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПН</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 10-11-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Практическая грамматика первого  иностранного языка(пр.)-4-404[ИЯ-АФ_Оb261] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Функциональная грамматика первого иностранного языка(пр.)-4-505[ИЯ-АФ_Оb241] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 11-11-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> СР</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-505[ИЯ-АФ_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 12-11-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ЧТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-510[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >  Практическая грамматика первого  иностранного языка(пр.)-4-404[ИЯ-АФ_Оb261] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 13-11-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 14-11-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> СБ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 15-11-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВС</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 16-11-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПН</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 17-11-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >  Функциональная грамматика первого иностранного языка(пр.)-4-505[ИЯ-АФ_Оb241] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 18-11-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> СР</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-513[ИЯ-АФ_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практическая грамматика первого  иностранного языка(пр.)-4-404[ИЯ-АФ_Оb261] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 19-11-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ЧТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-410[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-505[ИЯ-АФ_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Функциональная грамматика первого иностранного языка(пр.)-4-505[ИЯ-АФ_Оb241] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 20-11-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 21-11-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> СБ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 22-11-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВС</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 23-11-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПН</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 24-11-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Практическая грамматика первого  иностранного языка(пр.)-4-404[ИЯ-АФ_Оb261] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Функциональная грамматика первого иностранного языка(пр.)-4-505[ИЯ-АФ_Оb241] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 25-11-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> СР</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-505[ИЯ-АФ_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 26-11-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ЧТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-510[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >  Практическая грамматика первого  иностранного языка(пр.)-4-404[ИЯ-АФ_Оb261] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 27-11-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 28-11-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> СБ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 29-11-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВС</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 30-11-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПН</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 01-12-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >  Функциональная грамматика первого иностранного языка(пр.)-4-505[ИЯ-АФ_Оb241] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 02-12-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> СР</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-513[ИЯ-АФ_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практическая грамматика первого  иностранного языка(пр.)-4-404[ИЯ-АФ_Оb261] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 03-12-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ЧТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-410[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-505[ИЯ-АФ_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Функциональная грамматика первого иностранного языка(пр.)-4-505[ИЯ-АФ_Оb241] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 04-12-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 05-12-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> СБ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 06-12-2026<br><br/>знаменатель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВС</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 07-12-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПН</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 08-12-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ВТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Практическая грамматика первого  иностранного языка(пр.)-4-404[ИЯ-АФ_Оb261] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Функциональная грамматика первого иностранного языка(пр.)-4-505[ИЯ-АФ_Оb241] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 09-12-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> СР</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-505[ИЯ-АФ_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Иностранный язык, Английский(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 10-12-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ЧТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-509[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >  Практика устной и письменной речи первого  иностранного языка(пр.)-4-510[ИЯ-АН_Оb251] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >  Практическая грамматика первого  иностранного языка(пр.)-4-404[ИЯ-АФ_Оb261] </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 11-12-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> ПТ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    <tr>
+        <td rowspan = "7" style="font-weight:bold"> 12-12-2026<br><br/>числитель</td>
+        <td rowspan = "7" style="font-weight:bold"> СБ</td>
+        <td hidden=""></td>
+        <td hidden=""></td>
+
+
+    </tr>
+    <tr hidden="">
+    <td hidden=""></td>
+        <td hidden=""></td>
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          -->
+             <td>09:00-10:35</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>10:45-12:20</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>12:40-14:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>14:40-16:15</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>16:25-18:00</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+
+    <tr class="gran">
+
+         <!-- Пропускаем первый элемент
+          
+          -->
+             <td>18:10-19:45</td>
+
+        <td >    </td>
+
+
+    </tr>
+    
+    
+    </tr>
+    <div>
+
+    </div>
+
+</table>
+</div>
+
+
+
+
+
+</div>
+</body>
+</html>
