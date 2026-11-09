@@ -83,6 +83,9 @@ def main_keyboard(lang: str) -> ReplyKeyboardMarkup:
         keyboard=[[button("now"), button("today"), button("tomorrow")],
                   [button("week"), button("next_week")]],
         resize_keyboard=True,
+        # Без этого Telegram на компьютере сворачивает клавиатуру в значок у поля ввода,
+        # и кнопок «Сегодня», «Завтра»… не видно (на телефоне видно и так)
+        is_persistent=True,
     )
 
 

@@ -868,3 +868,12 @@ def test_rebuild_subject_index_keeps_old_when_no_subjects(store):
     site = FakeSite(empty, ["ИЯ-АН_Оb251", "Г-ИО_Оb261"], ["Шипилов А.В."])
     assert asyncio.run(schedules.rebuild_subject_index(site, store, pause=0)) is None
     assert store.subject_names() == ["Философия"]
+
+
+def test_main_keyboard_always_visible():
+    """Клавиатура не сворачивается в значок в Telegram на компьютере."""
+    from handlers import main_keyboard
+    for lang in LANGS:
+        kb = main_keyboard(lang)
+        assert kb.is_persistent is True and kb.resize_keyboard is True
+        assert [len(row) for row in kb.keyboard] == [3, 2]
